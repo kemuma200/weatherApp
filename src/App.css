@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+.App{
+  margin: 2vh;
+}
+a{
+  text-decoration: none;
+}
+.contain{
+  min-width: 300px;
+  display:block;
+  margin: 0 auto;
+  height: fit-content;
+  width: 50vw;
+  border: 1px solid black;
+  border-radius: 0.6vh;
+  box-shadow: 0 0 0 0.5 rgb(230, 215, 215);
+  padding: 2vh; 
+  font-family: sans-serif;
+
+}
+.link{
+  text-align: center;
+  margin: 2vh auto;
+  font-size: 2vh;
+  
+}
+.App-header{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: large;
+}
+.Search-section{
+  display:flex;
+}
+.Search-section form{
+  flex: 8;
+  display:flex;
+  height: 5vh;  
+}
+.Search-section form .search-bar{
+  flex: 6;
+  border: 1px solid black;
+  border-radius: 0.3vh;  
+}
+.Search-section form .search-submit{
+  flex:1;
+  border: 1px solid black;
+  border-radius: 0.3vh;
+  margin-left: 1vh;  
+}
+
+.Search-section .current-location{
+  flex:1;
+  margin-left: 2vh;
+  border-radius: 0.3vh;
+  border: 1px solid black;
+}
+.day-weather{
+  display: flex;
+}
+.day-weather .left{
+  flex:2;
+}
+.day-weather .right{
+  flex:1;
+}
+.right-aspects{
+  margin-top: 5vh;
+}
+.aspect{
+  font-size: 2.5vh;
+  margin: 0;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+.second-class-aspects{
+  font-size: 3vh;
+  opacity: 0.5;
+  margin:0
+}
+.temp{
+  font-size:8vh;
+  margin:0;
+  font-family: 'Lato', sans-serif;
+}
+.icon-temp{
+  display: flex;
+}
+
+.icon-temp canvas{
+  height: 32px;
+  width: 32px;
+  
+}
+.day-icon{
+  display: block;
+  margin: 0 auto;
+}
+.dailyWeather, .weather-forecast{
+  width: 90%;
+  display:flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+@media only screen and (max-width: 830px) {
+  .contain{
+    width: 70vw;
+    
+  }
+  .App-header{
+    font-size: 2vh; 
+  }
+  
+}
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 480px){
+  .contain{
+    width: 80vw;
+  }
+  .aspect{
+    font-size: 2vh;
+  }
+  .second-class-aspects{
+    font-size: 3vh;
+  }
+  .temp{
+    font-size: 5vh;
+  }
+  .search-bar{
+    width: 40vw;
+  }
+  .search-submit{
+    width: 15vw;
+    font-size: 1.8vh;
+  }
+  .current-location{
+    width: 17vw;
+    font-size: 1.8vh;
+  }
+
+
+}
+@media only screen and (max-width: 320px){
+  .App{
+    margin:.5vh;
+    box-sizing: border-box;
+    padding: .5vh;
+    
+  }
+  .contain{
+    box-shadow: 0 0 .8px .8px grey;
+    width: 95vw;
+    margin: 0;
+    padding:.5vh;
+    border: none;
+  }
+
+  form{
+    margin-left: 0;
+  }
+  
+  .search-bar{
+    width: 40vw;
+    left:0;
+  }
+  .search-submit{
+    width: 15vw;
+    font-size: 1.8vh;
+  }
+  .current-location{
+    width: 17vw;
+    font-size: 1.8vh;
+  }
+  .aspect{
+    font-size: 1.5vh;
+  }
+  .second-class-aspects{
+    font-size: 2vh;
+  }
+  .temp{
+    font-size: 5vh;
+  }
+  .icon-temp canvas{
+    height: 24px;
+    width: 24px;
+    
+  }
+}
+
+
+
+
+
+
+
+
